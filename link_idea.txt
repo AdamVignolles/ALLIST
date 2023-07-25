@@ -1,0 +1,23 @@
+color:
+    grey : https://web-color.aliasdmc.fr/couleur-web-gray-rgb-hsl-hexa.html -> #D9D9D9
+    beige : https://web-color.aliasdmc.fr/couleur-web-antiquewhite-rgb-hsl-hexa.html -> #FFF5EE
+
+Font:
+    Merriweather : https://fonts.google.com/specimen/Merriweather
+
+Figma : 
+    https://www.figma.com/file/hvRQhASuemGtw7iYKOlywq/Untitled?type=design&node-id=0-1&t=XNqNwSxKlFly9EXp-0
+
+special text area:
+    tiny : https://www.tiny.cloud/
+    check test.html
+
+db:
+    https://www.mongodb.com/cloud/atlas
+    check github
+
+icones:
+    flaticon : https://www.flaticon.com/
+
+django get method : 
+    stackoverflow : https://stackoverflow.com/questions/34322178/creating-forms-with-method-get-in-django

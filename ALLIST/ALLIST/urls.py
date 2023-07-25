@@ -19,6 +19,6 @@ from django.urls import path
 from ALLIST import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('admin/', admin.site.urls),
+    path('', views.acceuil, name='index'),
+    path('login/', views.login, name='login'),
 ]

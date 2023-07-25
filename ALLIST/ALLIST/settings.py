@@ -54,7 +54,7 @@ ROOT_URLCONF = 'ALLIST.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["ALLIST/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

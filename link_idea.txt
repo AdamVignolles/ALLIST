@@ -21,3 +21,12 @@ icones:
 
 django get method : 
     stackoverflow : https://stackoverflow.com/questions/34322178/creating-forms-with-method-get-in-django
+
+politique de confidentialité:
+    https://www.wonder.legal/fr/creation-modele/politique-confidentialite
+
+conditions d'utilisation:
+    https://www.wonder.legal/fr/creation-modele/conditions-utilisation
+
+footer:
+    https://www.generation-net.org/fr/blog/idees-pour-footer-votre-site-internet.html

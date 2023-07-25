@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>ALLIST</title>
+    <link rel='stylesheet' href="{% static 'css/acceuil/style.css' %}">
+</head>
+<body>
+
+
+
+    <header>
+        <div class="left">
+            <div class="logo">
+                <img src="{% static 'img/list.png' %}" alt="logo">
+            </div>
+            <div class="title"><h1>ALLIST</h1></div>
+        </div>
+        <div class="right">
+            <div class="box1">
+                <a href="login/">VOIR AVEC CODE</a>
+            </div>
+            <div class="box2">
+                <a href="login/">CREE UNE LISTE</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+
+        <div class="top">
+            <div class="img">
+                <img src="{% static 'img/big_image.png' %}" alt="img">
+            </div>
+            <div class="txt">
+                <p>ALLIST est un site qui vous permet de créer des listes de tâches, de course, de cadeaux et de les partager avec vos amis.</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="case1">
+                <img src="{% static 'img/image.png' %}"></div>
+                <span class="bar"></span>
+            <div class="case2">
+                <img src="{% static 'img/image.png' %}"></div>
+                <span class="bar"></span>
+            <div class="case3">
+                <img src="{% static 'img/image.png' %}"></div>
+                <span class="bar"></span>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

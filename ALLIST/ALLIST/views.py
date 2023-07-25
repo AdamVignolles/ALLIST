@@ -7,6 +7,9 @@ def acceuil(request):
     return render(request, 'acceuil/index.html')
 
 def login(request):
+
+    context = {}
+
     # form get method
     if request.method == 'GET': 
         if request.GET.get('login') == 'login':

@@ -6,6 +6,19 @@ from .manage_user import ManageUser
 def acceuil(request):
     return render(request, 'acceuil/index.html')
 
+def about(request):
+    return render(request, 'about/index.html')
+
+def contact(request):
+    return render(request, 'contact/index.html')
+
+def conditions_utilisation(request):
+    return render(request, 'conditions_utilisation/index.html')
+
+def politique_confidentialite(request):
+    return render(request, 'politique_confidentialite/index.html')
+
+
 def login(request):
 
     context = {}

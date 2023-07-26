@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>ALLIST-CONTACT</title>
+    <link rel='stylesheet' href="{% static 'css/about/style.css' %}">
+</head>
+<body>
+
+    <header>
+            <a class="top" href="/">
+                <div class="logo">
+                    <img src="{% static 'img/logo.png' %}" alt="logo">
+                </div>
+                <div class="title"><h1>ALLIST</h1></div>
+            </a>
+
+    </header>
+   
+
+    <main>
+
+        <h2>CONTACTER NOUS</h2>
+        <div class="container">
+            <div class="contact">
+                <div class="adresse">
+                    <div class="top">
+                        <div class="img">
+                            <img src="{% static 'img/findus.png' %}">
+                        </div>
+                        <div class="txt">
+                            <h3>ADRESSE</h3>
+                            <p>ST FARGEAU PONTHIERRY</p>
+                        </div>
+                    </div>
+                    <!--carte maps-->
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.621547427711!2d2.555868315674781!3d48.53820197925286!2m3!1f0!2f39.99999857720264!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f9b0b0b7a4d7%3A0x40b82c3688b0a70!2sRue%20de%20la%20Fontaine%20Ronde%2C%2077320%20Saint-Fargeau-Ponthierry!5e0!3m2!1sfr!2sfr!4v1618228579269!5m2!1sfr!2sfr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mid">
+                <div class="mail info">
+                    <div class="img">
+                        <img src="{% static 'img/mailus.png' %}">
+                    </div>
+                    <div class="txt">
+                        <h3>MAIL</h3>
+                        <p>adam.vignolles@gmail.com</p>
+                    </div>
+                </div>
+                <div class="tel info">
+                    <div class="img">
+                        <img src="{% static 'img/callus.png' %}">
+                    </div>
+                    <div class="txt">
+                        <h3>TELEPHONE</h3>
+                        <p>0767860272</p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="right">
+                <div class="reseaux">
+                    <h2>RESEAUX SOCIAUX</h2>
+                    <ul>
+                        <li><a href="#">
+                            <img src="{% static 'img/facebook.png' %}">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="{% static 'img/instagram.png' %}">
+                    </ul>
+                    <ul>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="{% static 'img/twitter.png' %}">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="{% static 'img/tiktok.png' %}">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+
+    </main>
+    
+
+    <footer>
+        <div class="top">
+            <div class="findus contact">
+                <div class="img">
+                    <img src="{% static 'img/findus.png' %}">
+                </div>
+                <div class="txt">
+                    <h2>FIND US</h2>
+                    <p>ST FARGEAU PONTHIERRY</p>
+                </div>
+            </div>
+            <div class="callus contact">
+                <div class="img">
+                    <img src="{% static 'img/callus.png' %}">
+                </div>
+                <div class="txt">
+                    <h2>CALLL US</h2>
+                    <p>0767860272</p>
+                </div>
+            </div>
+            <div class="mailus contact">
+                <div class="img">
+                    <img src="{% static 'img/mailus.png' %}">
+                </div>
+                <div class="txt">
+                    <h2>MAIL US</h2>
+                    <p>adam.vignolles@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!--ligne-->
+        <div class="line"></div>
+
+        <div class="info">
+            <div class="left">
+                <div class="title"><h1>ALLIST</h1></div>
+                <div class="txt"><p>ALLIST est un site qui vous permet de créer des listes de tâches, de course, de cadeaux et de les partager avec vos amis.</p></div>
+            </div>
+            <div class="mid">
+                <h2>LIENS UTILES</h2>
+                <ul>
+                    <li><a href="">ACCEUIL</a></li>
+                    <li><a href="about/">A PROPOS</a></li>
+                    <li><a href="contact/">CONTACT</a></li>
+                    <li><a href="conditions_utilisation/">CONDITIONS D'UTILISATION</a></li>
+                    <li><a href="politique_confidentialite/">POLITIQUE DE CONFIDENTIALITE</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>RESEAUX SOCIAUX</h2>
+                <ul>
+                    <li><a href="#">
+                        <img src="{% static 'img/facebook.png' %}">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="{% static 'img/instagram.png' %}">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="{% static 'img/twitter.png' %}">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="{% static 'img/tiktok.png' %}">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--ligne-->
+        <div class="line"></div>
+        <div class="bottom">
+            <p>© 2021 ALLIST. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

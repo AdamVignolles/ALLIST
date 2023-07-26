@@ -21,4 +21,8 @@ from ALLIST import views
 urlpatterns = [
     path('', views.acceuil, name='index'),
     path('login/', views.login, name='login'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('conditions_utilisation/', views.conditions_utilisation, name='conditions_utilisation'),
+    path('politique_confidentialite/', views.politique_confidentialite, name='politique_confidentialite'),
 ]

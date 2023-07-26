@@ -1,0 +1,321 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 20vh;
+}
+header a.top {
+    text-decoration: none;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+header a .logo{
+    width: 64px;
+    height: 64px;
+}
+header .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px;
+}
+
+
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main .contact{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #919191;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+main .contact .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main .contact .top img{
+    width: 64px;
+    height: 64px;
+}
+main .contact .txt{
+    margin-left: 10px;
+}
+main .contact p{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-top: 5px;
+}
+main .contact h3{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+main .maps iframe{
+    border: none;
+    border-radius: 10px;
+}
+
+main .mid{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 20px;
+}
+main .mid .info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    background-color: #919191;
+    padding: 10px;
+}
+main .mid .info .txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+main .mid .info .txt p{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-top: 5px;
+}
+main .mid .info .txt h3{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+main .right{
+    color: #fff;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #919191;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    margin-left: 70px;
+    padding: 10px;
+}
+main .right .reseaux ul{
+    width: 100%;
+    display: flex;
+}
+main .right .reseaux ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    margin-top: 75px;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+footer .top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .top img{
+    width: 64px;
+    height: 64px;
+}
+footer .contact{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .contact .txt{
+    width: 70%;
+    margin-left: 10px;
+}
+footer .contact p{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-top: 5px;
+}
+footer .contact h2{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+footer .info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer .info .left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer .info .left .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .info .left .title h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+footer .info .left .txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .info .left .txt p{
+    width: 80%;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .info .mid{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .info .mid ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+footer .info .mid ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+footer .info .right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .info .right ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+footer .info .right ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+
+}
+footer .info .right ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+footer .line{
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+footer .bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}

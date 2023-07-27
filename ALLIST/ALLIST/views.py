@@ -59,4 +59,15 @@ def app(request):
     # get cookie
     if request.COOKIES.get('email') == None:
         return redirect('/login/')
-    return render(request, 'app/index.html')
+    
+    users = ManageUser().get_user_by_email(request.COOKIES.get('email'))
+    len_user = 0
+    for user in users:
+        len_user += 1
+        user = user
+    if len_user == 1:
+        print(user)
+        context = {'user': user, 'all_listes': ManageUser().get_user_listes(user)}
+        return render(request, 'app/index.html', context=context)
+    else:
+        return redirect('/login/')

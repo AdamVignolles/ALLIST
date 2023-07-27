@@ -21,9 +21,9 @@
                 <span></span>
                 
                 <ul id="menu">
-                    <a href="#mes_liste"><li><img src="{% static 'img/meslistepng' %}" width="25px">MES LISTES</li></a>
-                    <a href="#liste_code"><li><img src="{% static 'img/listecode.png' %}" width="25px">LISTE AVEC VODE</li></a>
-                    <a href="/user/"><li><img src="{% static 'img/profile.png' %}" width="25px">Profile</li></a>
+                    <a href="#mes_liste"><li><img src="{% static 'img/meslistes.png' %}" width="25px">MES LISTES</li></a>
+                    <a href="#liste_code"><li><img src="{% static 'img/lien.png' %}" width="25px">LISTE AVEC VODE</li></a>
+                    <a href="/user/"><li><img src="{% static 'img/user.png' %}" width="25px">Profile</li></a>
                     <a href="/user/#logout"><li><img src="{% static 'img/exit.png' %}" width="25px">Logout</li></a>
                 </ul>
             </div>
@@ -32,8 +32,44 @@
             <h1>ALLIST</h1>
         </a>
         <a href="/user" class="user_image">
-            <img src="{{base_image}}" with="64px" height="64px" alt="{{base_image}}">
+            <img src="{% static 'img/user.png' %}" with="64px" height="64px" >
         </a>
     </header>
+
+    <main>
+
+        <div class="mes_liste" id="mes_liste">
+            <h2>MES LISTES</h2>
+            <div class="listes">
+                <!--show 5 liste in listes by row-->
+                {% for listes in all_listes %}
+                    <div class="row">
+                        {% for liste in listes %}
+
+                            {% if liste.name == "create a new liste" %}
+                                <div class="liste">
+                                    <a href="/list/create">
+                                        <img src="{% static 'img/add.png' %}" width="48px" height="48px">
+                                        <h3>nouvelle liste</h3>
+                                    </a>
+                                </div>
+                            {% else %}
+                                <div class="liste">
+                                    <a href="/list/{{ liste.id }}">
+                                        <img src="{% static 'img/list.png' %}" width="48px" height="48px">
+                                        <h3>{{ liste.name }}</h3>
+                                    </a>
+                                </div>
+                            {% endif %}
+
+                        {% endfor %}
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </main>
 
 </body>

@@ -2,6 +2,9 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Jost', sans-serif;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* menu */
@@ -150,8 +153,6 @@ header nav{
      text-align: center;
  }
  header img{
-     margin-top: 20px;
-     margin-right: 50px;
      cursor: pointer;
  }
  
@@ -167,3 +168,70 @@ header nav{
    -webkit-user-select: none;
    user-select: none;
  }
+ header .user_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 25px;
+        cursor: pointer;
+        margin-left: 60%;
+ }
+
+ header ul#menu a li{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+ }
+ header ul#menu a li img{
+    margin-right: 10px;
+ }
+
+
+/* main */
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 85%;
+}
+main .listes{
+    display:flex;
+    flex-direction: column;
+}
+main .listes .row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 80%;
+}
+main .listes .row .liste{
+    width: 15%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    justify-content: center;
+    background-color: #919191;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+main .listes .row .liste a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .listes .row .liste a h3{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
+}

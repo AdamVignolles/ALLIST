@@ -337,3 +337,262 @@ footer .bottom{
     align-items: center;
     margin: 50px;
 }
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 450px) {
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .contact{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .mid{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    main .container .mid .info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .mid .info .txt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .container .right{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    main .container .right .reseaux{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    footer {
+        height : 100%;
+    }
+    footer .top{
+        flex-direction: column;
+        justify-content: normal;
+        align-items: normal;
+        margin-left: 60px;
+    }
+    footer .top .contact {
+        margin-top: 20px;
+    }
+    footer .top .contact .txt h2{
+        font-size: 1em;
+    }
+    footer .top .contact .txt p{
+        font-size: 0.8em;
+    }
+    footer .info{
+        width: 70%;
+        justify-content: space-between;
+    }
+    footer .info .left{
+        display:none;
+    }
+
+    footer .mid h2{
+        font-size: 1em;
+        width: 150px;
+    }
+
+    footer .mid ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    footer .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding : 0;
+    }
+    footer .right h2{
+        font-size: 1em;
+        width: 150px;
+    }
+    footer .right ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    footer .right ul li a img{
+        margin-top: 5px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .contact{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .mid{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    main .container .mid .info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .mid .info .txt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .container .right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    main .container .right .reseaux{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .container .right .reseaux ul li a{
+        margin: 10px;
+    }
+
+    footer .right ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    footer .right ul li a img{
+        margin-top: 5px;
+        width: 32px;
+        height: 32px;
+    }
+
+}

@@ -25,4 +25,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('conditions_utilisation/', views.conditions_utilisation, name='conditions_utilisation'),
     path('politique_confidentialite/', views.politique_confidentialite, name='politique_confidentialite'),
+    path('app/', views.app, name='app'),
 ]

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .manage_user import ManageUser
 
 # Create your views here.
@@ -26,21 +26,20 @@ def login(request):
     # form get method
     if request.method == 'GET': 
         if request.GET.get('login') == 'login':
-            print(request.GET.get('email'))
-            print(request.GET.get('pswd'))
+
             m = ManageUser()
             users = m.get_user_by_email_and_password(request.GET.get('email'), request.GET.get('pswd'))
             for user in users:
                 if user['email'] == request.GET.get('email') and user['password'] == request.GET.get('pswd'):
                     context = {'error_login': 'user found'}
-                    return render(request, 'login/index.html', context=context)
+                    # create cookie
+                    response = render(request, 'login/index.html', context=context)
+                    response.set_cookie('email', request.GET.get('email'))
+                    return redirect('/app/')
+                
             context = {"error_login": "email or password incorrect"}
             
         elif request.GET.get('signup') == 'signup':
-            print(request.GET.get('login'))
-            print(request.GET.get('pswd'))
-            print(request.GET.get('email'))
-            print(request.GET.get('txt'))
             m = ManageUser()
             users = m.get_user_by_email(request.GET.get('email'))
             for user in users:
@@ -49,5 +48,15 @@ def login(request):
                     return render(request, 'login/index.html', context=context)
             m.insert_user(request.GET.get('txt'), request.GET.get('pswd'), request.GET.get('email'))
             context = {'error_sign_up': 'user inserted'}
+            # create cookie
+            response = render(request, 'login/index.html', context=context)
+            response.set_cookie('email', request.GET.get('email'))
+            return redirect('/app/')
 
     return render(request, 'login/index.html', context=context)
+
+def app(request):
+    # get cookie
+    if request.COOKIES.get('email') == None:
+        return redirect('/login/')
+    return render(request, 'app/index.html')

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>ALLIST-APP</title>
+    <link rel='stylesheet' href="{% static 'css/app/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                    <a href="#mes_liste"><li><img src="{% static 'img/meslistepng' %}" width="25px">MES LISTES</li></a>
+                    <a href="#liste_code"><li><img src="{% static 'img/listecode.png' %}" width="25px">LISTE AVEC VODE</li></a>
+                    <a href="/user/"><li><img src="{% static 'img/profile.png' %}" width="25px">Profile</li></a>
+                    <a href="/user/#logout"><li><img src="{% static 'img/exit.png' %}" width="25px">Logout</li></a>
+                </ul>
+            </div>
+        </nav>
+        <a href="/">
+            <h1>ALLIST</h1>
+        </a>
+        <a href="/user" class="user_image">
+            <img src="{{base_image}}" with="64px" height="64px" alt="{{base_image}}">
+        </a>
+    </header>
+
+</body>

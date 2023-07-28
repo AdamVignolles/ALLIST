@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .manage_user import ManageUser
 
 # Create your views here.
@@ -33,8 +33,13 @@ def login(request):
                 if user['email'] == request.GET.get('email') and user['password'] == request.GET.get('pswd'):
                     context = {'error_login': 'user found'}
                     # create cookie
-                    response = render(request, 'login/index.html', context=context)
-                    response.set_cookie('email', request.GET.get('email'))
+                    response = render(request, 'app/index.html')
+                    print(response)
+                    print(request.GET.get('email'))
+                    response.set_cookie('email', request.GET.get('email'), samesite='Lax')
+                    print(response.set_cookie('email', request.GET.get('email'), samesite='Lax'))
+                    print(request.COOKIES.get('email'))
+                    print(response.cookies)
                     return redirect('/app/')
                 
             context = {"error_login": "email or password incorrect"}
@@ -49,8 +54,9 @@ def login(request):
             m.insert_user(request.GET.get('txt'), request.GET.get('pswd'), request.GET.get('email'))
             context = {'error_sign_up': 'user inserted'}
             # create cookie
-            response = render(request, 'login/index.html', context=context)
+            response = render(request, 'app/index.html')
             response.set_cookie('email', request.GET.get('email'))
+            print(request.GET.get('email'))
             return redirect('/app/')
 
     return render(request, 'login/index.html', context=context)
